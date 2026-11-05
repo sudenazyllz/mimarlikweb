@@ -1,0 +1,45 @@
+:root {
+    --ana-renk: #0f0f0f;
+    --arkaplan-renk: #1a1a1a;
+    --baglanti-renk: #dbb537;
+    --metin: #EFEFEF;
+    --koyu: #0A0A0A;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ana-renk);
+    background-color: var(--baglanti-renk);
+}
+
+h1, h2 {
+    color: var(--koyu);
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--kenar);
+}
+
+a:hover {
+    color: var(--vargu-renk);
+}
+
+.vurgu {
+    color: var(--vargu-renk);
+    font-weight: bold;
+}
+
+.color {
+    color: var(--vurgu-renk);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+}
