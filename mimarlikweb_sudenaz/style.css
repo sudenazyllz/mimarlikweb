@@ -1,0 +1,49 @@
+:root
+{
+    --ana-renk: #6016d6;
+    --vurgu-renk: #33a6d7;
+    --baglanti-renk: #897e0a;
+    --zemin: #F2F4F7;
+    --metin: #1F2937;
+    --kenar: #D0D5DD;
+
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ana-renk);
+    background-color: var(--baglanti-renk);
+}
+h1, h2 {
+    color: #2d0b76;
+}
+h2
+{
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--kenar);
+}
+
+a:hover {
+    color:var(--vurgu-renk);
+}
+
+.vurgu
+{
+    color: var(--vurgu-renk);
+    font-weight: bold;
+}
+.COLOR
+{
+    color: #2d0b76;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.9rem;
+}
