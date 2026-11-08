@@ -1,206 +1,45 @@
-:root
-{
-    --ana-renk: #0F0F0F;      
-    --zemin: #1A1A1A;          
-    --metin: #CCCCCC;         
-    --vurgu-renk: #dbb537;    
-    --baglanti-renk: #E6C594;  
-    --kenar: #2E2E2E;    
-          
-    --ana-baslik: #FFFFFF;     
-    --alt-baslik: #999999;
+:root {
+    --ana-renk: #8d7c17;
+    --ikincil-renk: #f0e68c;
+    --baglanti-renk: #0000ff;
+    --metin: #ffffff;
+    --vurgu: #ff0000;
 }
 
-body{
-    font-family: 'Outfit', sans-serif;
+body {
+    font-family: arial, sans-serif;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
+    color: var(--ana-renk);
+    background-color: var(--baglanti-renk);
+}
+
+h1, h2 {
     color: var(--metin);
-    background-color: var(--ana-renk);
-    margin: 0;                        /* Tarayıcının sayfaya otomatik verdiği dış boşlukları sıfırlar */
-    padding: 0;                       /* İç boşluğu sıfırlar */
 }
-h1,h2{
-    color: var(--ana-baslik);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px ; 
-}
-h3,h4{
-    color: var(--alt-baslik);
+
+h3 {
     font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: 1px ;
 }
 
-a {
-
-    color: var(--baglanti-renk);
-    text-decoration: none; 
-    transition: color 0.3s ease;      /* Renk değişimlerinin yumuşak geçişli olmasını sağlar */
-
+p {
+    color: var(--metin);
 }
 
-a:hover { 
-    color:var(--vurgu-renk);
-}
-
-/* 3. HAFTA: FLEXBOX İLE HEADER VE MENÜ DÜZENİ*/
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:20px 50px; /* üst alt nosluk sag sol bosluk*/
-    background-color: var(--zemin);
-    border-bottom: 1px solid var(--kenar);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo
-{
-    height: 60px;
-    width: auto;
-    display: block;
-}
-
-.nav-links
-{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding:0;
-}
-
-.menu-toggle
-{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: var(--vurgu-renk);
-    border-radius: 2px;
-}
-
-#giris
-{
-    text-align:center;
-    padding: 80px 20px;
-}
-
-#one-cikan-projeler,
-#hakkimizda {
-    padding: 50px 50px; 
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#one-cikan-projeler h2,
-#hakkimizda h2 {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-/* 3.Haftada bu kısımda sadece proje-kartlari eklendi*/
-
-.proje-kartlari
-{
-    display:grid;
-    flex-direction: column;
-    gap: 30px;
-}
-.proje-karti {
-    background-color: var(--zemin);
-    border:1px solid var(--kenar);
-    border-radius: 8px;
-    padding: 15px;
-    transition: border-color 0.9s ease;
-}
-
-.proje-karti:hover{
-    border-color: var(--vurgu-renk);
-    transform: translateY(-5px);
-}
-
-.proje-karti img{
-    width: 100%;
-    height: auto;
-    filter: brightness(0.7);
-    transition: filter 0.4s ease;
-}
-
-.proje-karti img:hover{
-    filter: brightness(1);
-}
-
-.proje-kartlari a.proje-karti {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.proje-kartlari a.proje-karti:hover {
-    transform: translateY(-5px);
-}
-
-/*hakkımda ve iletisim bolumu*/
-.icerik-kutusu
-{
-    background-color: var(--zemin);
-    border: 1px solid var(--kenar);
-    margin: 40px 50px;
-    padding: 40px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.icerik-kutusu h2
-{
-    text-align: center;
+a:hover {
     color: var(--vurgu-renk);
 }
 
-footer
-{
-    text-align: center;
-    padding: 30px;
-    background-color: var(--zemin);
-    border-top: 1px solid var(--kenar);
-    font-size: 0.9rem;
-    color: var(--alt-baslik);
+.vurgu {
+    color: var(--vurgu-renk);
+    font-weight: bold;
 }
 
+.color {
+    color: var(--vurgu-renk);
+}
 
-/* mobil uyum*/
-@media (max-width:768px) 
-{
-    .nav-links
-    {
-        display: none;
-    }
-    .menu-toggle
-    {
-        display: flex;
-    }
-    header
-    {padding: 20px 20px;}
-    #one-cikan-projeler, .icerik-kutusu 
-    {
-        padding: 20px;
-        margin: 20px;
-    }
-    .proje-kartlari {
-        grid-template-columns: 1fr;
-    }
+footer {
+    text-align: center;
+    font-size: 0.9rem;
 }
