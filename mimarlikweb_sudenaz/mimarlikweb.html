@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anıl Özdemir Mimarlık</title>
+        <title>Anıl Özdemir Mimarlık    </title>
         <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 
     <body>
+        <!--ÜST BİLGİ VE MENÜ (Flexbox ile Hizalanacak Alan)-->
         <header>
-
-            <h1>Anıl Özdemir Mimarlık</h1>
+            <a href="mimarlikweb.html" class="logo-link">
+                <img src="logobeyaz.webp" alt="Anıl Özdemir Mimarlık Logo" class="logo">
+            </a>
+            
             <nav>
-                <ul>
+                <ul class="nav-link">
 
-                    <li><a href="mimarlikweb.html"></a></li>
-                    <li><a href="projeler.html">Projelerimiz</a></li>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="#giris">Ana Sayfa</a></li>
+                    <li><a href="#one-cikan-projeler">Projelerimiz</a></li>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
                 </ul>
+
+                <!--Mobil uyumluluk-->
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </header>
-
-
-
+       
+    
+        <!--Ana kısım-->
        <main>
             <section id="giris">
                 <h2>Estetiğin ve İşlevselliğin Buluşma Noktası</h2>
@@ -31,24 +41,43 @@
             </section>
 
             <section id="one-cikan-projeler">
-                <h2>Öne Çıkan Projelerimiz</h2>
+                <h2>Projelerimiz</h2>
 
                 <div class="proje-kartlari">
-                    <!--PROJE 1 -->
-                    <div class="proje-karti">
-                        <img src="images.webp" alt="modern villa projesi">
-                        <h3>Koru Villaları</h3>
-                        <p>Doğayla uyumlu , sürdürülebilir lüks konut projesi.</p>
-                    </div>
-
-                    <!--Proje 2-->
-                    <div class="proje-karti">
-                        <img src="plaza.webp" alt="Plaza Projesi">
-                        <h3>Beker Plaza</h3>
-                        <p>Şehir merkezinde yenilikçi iş merkezi tasarımı</p>
-                    </div>
+                    <!--PROJELer-->
+                    <a href="proje-detay.html" class="proje-karti">
+                        <img src="images.webp" alt="Projelermiz_Kartı">
+                        <h3>Projelerimiz</h3>
+                        <p>Doğayla uyumlu , sürdürülebilir lüks projelerimiz.</p>
+                    </a>
+                               
                 </div>
             </section>
+
+            <section id="hakkimizda" >
+                <h2>Hakkımda</h2>
+    
+                <div class="proje-kartlari">
+                    <a href="hakkimda-detay.html" class="proje-karti">
+                        <img src="hakkımda2.webp" alt="Hakkımda_kartı">
+                        <h3>Anıl Özdemir Kimdir?</h3>
+                        <p>Stüdyo felsefemiz ve mimari yaklaşımımız hakkında detaylı bilgi için tıklayın.</p>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="iletisim" class="icerik-kutusu">
+                <h2>İletişim</h2>
+                <p>Hayata geçirmek istediğiniz projeleriniz için bizimle iletişime geçin.</p>
+                <p><strong>E-posta:</strong><a href="mailto:ozdemir.anil@outlook.com">ozdemir.anil@outlook.com</a></p>
+                <p><strong>Konum:</strong> Ankara, Türkiye</p>
+            </section>
        </main>
+
+       <footer>
+            <p>&copy; 2026 Anıl Özdemir Mimarlık. Tüm hakları saklıdır.</p>
+       </footer>
     </body>
+        
 </html>

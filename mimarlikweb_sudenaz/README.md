@@ -1,14 +1,14 @@
-Hafta 2 – Mimarlık Web Projesi-Sudenaz Yıldız
+Hafta 3 – Mimarlık Web Projesi-Sudenaz Yıldız
 
 Bu Hafta Yapılanlar
 
-* Web sitesinin olusturulan html kodu css e gore duzenlendi.
-* CSS dosyasının içine proje kartlarının hareket mekanizması gibi görsel efektlerinin düzenlenmesi yapıldı.
-* HTML ve CSS dosyaları birbirine bağlandı.
-* Projede kullanılacak görseller eklendi.
+* CSS kodunda ilerlendi ve flexbox ,grid yapılarıyla daha dinamik ve düzenli bir görünüm oluşturuldu.
+* Yeni classlar ve idler ile css kdounda verimlilik ve kullanım kolaylığı sağlandı.
+* Proje kartları kısmı yenilendi ve kartlar link özelliği taşr hale getirildi.
+* Hakkımda ve iletişim footer kısımları eklendi.
 
 Kullanılan Teknolojiler
 
 * HTML
-* CSS
+* CSS-flexbox-grid
 * Drive Linki: https://drive.google.com/drive/folders/1nJSV9HdTBtADgbZjsE8pyED8yQofKdUD?usp=sharing*
