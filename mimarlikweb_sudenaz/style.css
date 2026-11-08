@@ -1,49 +1,67 @@
 :root
 {
-    --ana-renk: #6016d6;
-    --vurgu-renk: #33a6d7;
-    --baglanti-renk: #897e0a;
-    --zemin: #F2F4F7;
-    --metin: #1F2937;
-    --kenar: #D0D5DD;
+    --ana-renk: #0F0F0F;
+    --zemin: #1A1A1A;
+    --metin: #CCCCCC;
+    --vurgu-renk: #dbb537;
+    --baglanti-renk: #E6C594;
+    --kenar: #2E2E2E;
 
+    --ana-baslik: #FFFFFF;
+    --alt-baslik: #999999;
 }
 
-body
-{
-    font-family: Arial, sans-serif;
+body{
+    font-family: 'Outfit', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--ana-renk);
-    background-color: var(--baglanti-renk);
+    color: var(--metin);
+    background-color: var(--ana-renk);
 }
-h1, h2 {
-    color: #2d0b76;
+
+h1,h2{
+    color: var(--ana-baslik);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px ;
 }
-h2
-{
+h3,h4{
+    color: var(--alt-baslik);
     font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px ;
 }
 
 a {
-    color: var(--kenar);
+
+    color: var(--baglanti-renk);
+    text-decoration: none;
 }
 
 a:hover {
     color:var(--vurgu-renk);
 }
 
-.vurgu
-{
-    color: var(--vurgu-renk);
-    font-weight: bold;
-}
-.COLOR
-{
-    color: #2d0b76;
+.proje-karti {
+    background-color: var(--zemin);
+    border:1px solid var(--kenar);
+    border-radius: 8px;
+    padding: 15px;
+    transition: border-color 0.9s ease;
 }
 
-footer{
-    text-align: center;
-    font-size: 0.9rem;
+.proje-karti:hover{
+    border-color: var(--vurgu-renk);
+    transform: translateY(-5px);
+}
+
+.proje-karti img{
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7);
+    transition: filter 0.4s ease;
+}
+
+.proje-karti img:hover{
+    filter: brightness(1);
 }
